@@ -64,11 +64,11 @@ export default function SignIn() {
         <div className=" absolute size-2 top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full" />
         <div className=" absolute size-2 top-1/2 left-full -translate-x-1/2 -translate-y-1/2 bg-white rounded-full" />
       </motion.div>
-      <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg z-10 flex flex-col justify-center items-center">
+     <div className="w-full max-w-md bg-white bg-opacity-0 p-8 rounded-lg shadow-lg z-0 flex flex-col justify-center items-center">
         <h2 className="text-2xl font-bold text-center mb-6">Sign In</h2>
         <form onSubmit={handleSignIn} className="w-full">
           <div className="mb-4">
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-900">Email</label>
             <input
               type="email"
               id="email"
@@ -79,14 +79,14 @@ export default function SignIn() {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>
+            <label htmlFor="password" className="block text-sm font-medium text-gray-900">Password</label>
             <input
               type="password"
               id="password"
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full p-3 mt-1 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 transition"
+              className="w-full p-3 mt-1 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-400 transition"
             />
           </div>
           {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
