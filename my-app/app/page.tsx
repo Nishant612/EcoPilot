@@ -6,7 +6,7 @@ export default function Home() {
     <main className="min-h-screen bg-gray-50 text-gray-800">
       <Navbar />
       
-{/* Hero Section */}
+
 
 <section className="flex flex-col items-center justify-center text-center py-20 px-6 bg-gradient-to-r from-green-400 to-blue-500 text-white">
 <h1 className="text-4xl md:text-6xl font-bold mb-4">
@@ -21,7 +21,7 @@ Get Started
 </section>
 
 
-{/* Features Section */}
+
 <section className="py-16 px-6 max-w-6xl mx-auto">
 <h2 className="text-3xl font-bold text-center mb-12">Our Features</h2>
 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -75,7 +75,7 @@ Download App
 </section> */}
 
 
-{/* Footer */}
+
 <footer className="py-6 text-center bg-gray-800 text-gray-300">
 <p>© 2025 Smart Mobility Platform. All rights reserved.</p>
 </footer>
